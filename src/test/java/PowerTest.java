@@ -1,14 +1,17 @@
-package powerpackage;
 
-
+import powerpackage.PowerFinder;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class PowerTest {
 
     @Test
     public void oneRaisedToOneIsOne() {
 
-        assert PowerFinder.of(1,1) == 1;
+        assertTrue((PowerFinder.of(1,1) == 1));
+
     }
 
     @Test
@@ -26,6 +29,6 @@ public class PowerTest {
     @Test
     public void threeRaisedToTwoIsNine() {
 
-        assert PowerFinder.of(3, 2) == 3*3;
+        assert PowerFinder.of(3, 2) == 9;
     }
 }
